@@ -1,0 +1,200 @@
+<html>
+		<head>
+			<title>Hello!</title>
+			<style>
+				body{
+					
+					padding:0px;
+					border:0px;
+				}
+				#noo{
+					border-radius:20px;
+					height:50px;
+					width:50px;
+					margin-top:10px;	
+					background-color:yellow;
+					border:none;
+					box-shadow:0px 0px 3px 7px #000000;
+					display:none;
+					float:left;
+					margin-right:50px;
+					outline:none;
+				}
+				#js{
+					text-align:center;
+					margin-top:50px;
+				}
+				#yess{
+					height:50px;
+					width:400px;
+					border-radius:5px;
+					font-family:algerian;
+					color:#fff;
+					background-color:blue;
+					border:none;
+					margin-top:25px;
+					font-size:25px;
+					box-shadow:0px 0px 3px 7px #000000;
+					outline:none;
+					position:relative;
+					top:-30px;
+					left:-550px;
+				}
+				#yes{
+					border-radius:20px;
+					height:50px;
+					width:50px;
+					margin-top:10px;
+					margin-right:50px;
+					background-color:cyan;
+					border:none;
+					box-shadow:0px 0px 3px 7px #000000;
+					display:none;
+					float:left;
+					margin-right:50px;
+					outline:none;
+				}
+				#nothing{
+					border-radius:20px;
+					height:50px;
+					width:50px;
+					margin-top:10px;
+					background-color:red;
+					border:none;
+					box-shadow:0px 0px 3px 7px #000000;
+					display:none;
+					float:left;
+					margin-right:50px;
+					outline:none;
+				}
+				.border{
+					height:26px;
+					width:-1px;
+					border:1px solid black;
+					font-family:algerian;
+					border-radius:10px;
+					font-size:18px;
+					background: linear-gradient(15deg, blue, transparent );
+					box-shadow:0px 2px 3px 13px #15a8e0a1;
+					
+				}
+				.border:hover{
+					background: linear-gradient(15deg, black, transparent );
+					box-shadow:0px 2px 3px 13px #fb07ff;
+					color:red;
+				}
+				#yess:active{
+					box-shadow:0px 0px 3px 7px #ff0000;
+				}
+				#yes:active{
+					box-shadow:0px 0px 3px 7px  #ff0000;
+				}
+				#nothing:active{
+					box-shadow:0px 0px 3px 7px  #ff0000;
+				}
+				#noo:active{
+					box-shadow:0px 0px 3px 7px  #ff0000;
+				}
+				.disp-btn{
+					position:relative;
+					top:30px;
+					left:542px;	
+				}
+				#image{
+					display:none;
+					position:relative;
+					top:90px;
+					left:-320px;
+					width:300px;
+					height:35px;
+					border-radius:15px;
+					border:none;
+					box-shadow:0px 0px 3px 7px #000000;
+					font-family:algerian;
+					font-size:20px;
+					color:#fff;
+					background-color:red;
+					outline:none;	
+				}
+				#image:active{
+					box-shadow:0px 0px 3px 7px  #ff0000;
+				}
+				#model{
+					display:none;	
+				}
+				#close{
+					display:block;
+					position:relative;
+					top:150px;
+					left:-240px;
+					font-family:algerian;
+					color:#fff;
+					background-color:black;
+					font-size:25px;
+					height:40px;
+					width:150px;
+					outline:none;
+					border:2px solid red;
+					border-radius:10px;
+				}
+				#modal{
+					font-family:algerian;
+					color:#fff;
+					background-color:black;
+					font-size:25px;
+					height:40px;
+					width:200px;
+					outline:none;
+					border:2px solid red;
+					border-radius:10px;
+				}
+				
+			</style>
+			<!---<marquee class="border">My Name is Ashish I am 14 year old This is my Website And I am a Web desiner Thanks for Watching and Visit Again!</marquee>-->
+		</head>
+	<body>
+	
+		<body id="js" >
+		<button type="button" onclick="modal()" id="modal"> Open Modal</button>
+	<div class="modal" id="model">	
+	<div class="disp-btn">	
+		<button onclick="rr()" id="yess"> click here to change colour</button><br>
+		<button onclick="pp()" id="noo"></button>
+		<button onclick="qq()" id="yes"></button>
+		<button onclick="tt()" id="nothing"></button>
+		<button onclick="ee()" id="image"> Insert image</button>
+		<button onclick="dd()" id="close"> close</button>
+	</div>
+	</div>
+	<script>
+		function rr(){
+			document.getElementById("noo").style.display="block";
+			document.getElementById("yes").style.display="block";
+			document.getElementById("nothing").style.display="block";
+			document.getElementById("image").style.display="block";
+		}
+		function pp(){
+			document.getElementById("js").style.backgroundColor="yellow";
+		}
+		function qq(){
+			document.getElementById("js").style.backgroundColor="cyan";
+		}
+		function tt(){
+			document.getElementById("js").style.backgroundColor="red";
+		}
+		function ee(){
+			document.getElementById("js").style.backgroundImage="url('image.jpg')";
+		}
+		var name ="THIS WEBSITE IS ONLY FOR EDUCATION";
+		window.alert("HELLO "+ name);
+		function modal(){
+			document.getElementById("model").style.display="block";
+		}
+		function dd(){
+			document.getElementById("model").style.display="none";
+		}
+		
+		
+	</script>
+	</body>
+</html>
