@@ -1,0 +1,262 @@
+<html>
+	<head>
+		<title>Hello! </title>
+		<style>
+		body{
+			margin:0px;
+			padding:0px;
+			border:none;
+		}
+		#a{
+			border-radius:50px;
+			height:40px;
+			width:36px;
+			display:none;
+			float:left;
+			margin-right:30px;
+			text-align:center;
+			outline:none;
+			border:none;
+			background-color:red;
+			margin-top:10px;
+			margin-left:85px;
+			transition:transform 0.25s ease-out;
+		}
+		#a:hover{
+			transform: scale(1.05);
+		}
+		#b{
+			border-radius:50px;
+			height:40px;
+			width:36px;
+			display:none;
+			float:left;
+			margin-right:30px;
+			text-align:center;
+			outline:none;
+			border:none;
+			background-color:cyan;
+		    margin-top:10px;
+			transition:transform 0.25s ease-out;
+		}
+		#b:hover{
+			transform: scale(1.05);
+		}
+		#c{
+			border-radius:50px;
+			height:40px;
+			width:36px;
+			display:none;
+			float:left;
+			margin-right:30px;
+			text-align:center;
+			outline:none;
+			border:none;
+			background-color:#ef256a;
+			margin-top:10px;		
+		   transition:transform 0.25s ease-out;
+		}
+		#c:hover{
+			transform: scale(1.05);
+		}
+		#d{
+		   display:none;
+		   position:relative;
+		   left:15px;
+		   top:10px;
+		   width:316px;
+		   background-color:black;
+		   font-family:algerian;
+		   color:#fff;
+		   border-radius:16px;
+		   height:30px;
+		   font-size:15px;
+		   border:none;
+		   outline:none;
+		   transition:transform 0.25s ease-out;
+		}
+		#d:hover{
+			transform: scale(1.05); 
+		}
+		#d:hover{
+			transform: scale(1.05); 
+			color:skyblue;		
+		}
+		#js{
+			text-align:center;
+		}
+		.disp{
+			position:relative;
+			top:130px;
+			left:310px;
+			height:250px;
+			width:350px;
+			background: linear-gradient(to right,#ef256a -1%,black 96%);	
+			border-radius:10px;
+		}
+		#butn{
+			width:320px;
+			border-radius:5px;
+			border:none;
+			font-family:algerian;
+			color:#fff;
+			background-color:black;
+			height:35px;
+			font-size:20px;
+			outline:none;
+			margin-top:20px;
+			transition:transform 0.25s ease-out;
+		}
+		#butn:hover{
+			transform: scale(1.05);
+		}
+		.modal{
+			position:fixed;
+			top:0px;
+			left:0px;
+			height:100%;
+			width:100%;
+			background-color:rgba(0,0,0,0.5);
+			overflow:auto;
+			z-index:1;
+			display:none;
+		}
+		#f{
+			display:block;
+			position:relative;
+			top:150px;
+			left:0px;
+			background-color:black;
+			transition:transform 0.25s ease-out;
+			outline:none;
+		}
+		#f:hover{
+			transform: scale(1.05); 
+			background-color:red;
+		}
+		#e{
+			position:relative;
+			top:30px;
+			left:1px;
+			height:40px;
+			width:300px;
+			border-radius:20px;
+			color:#fff;
+			background: linear-gradient(to top, #ef256a, #000000);
+			outline:none;
+			border:none;
+			font-family:algerian;
+			font-size:20px;
+			transition:transform 0.25s ease-out;
+			
+		}
+		#e:active{
+			box-shadow:0px 5px 20px 5px #ff0fc0;
+		}
+		#e:hover{
+			color:red;
+			transform: scale(1.05); 
+			font-size:25px;
+			background: linear-gradient(to top,  #000000, #ef256a);
+		}
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.close{
+			width:40px;
+			height:30px;
+			position:relative;
+			background-color:gray;
+			
+		}
+		.close span:nth-child(1){
+			height:2px;
+			width:20px;
+			background-color:white;
+			position:absolute;
+			top:45%;
+			left:25%;
+			transform: rotate(135deg);
+		}
+		.close span:nth-child(2){
+			height:2px;
+			width:20px;
+			background-color:white;
+			position:absolute;
+			top:45%;
+			left:25%;
+			transform: rotate(-135deg);
+		}
+		.close:hover{
+			background-color:red;
+		}
+		
+		
+		</style>
+	</head>
+	<body id="js" style="background color:red;">
+	<button onclick="rr()" id="e">Open Modal</button>
+		<div type="button" id="modal" class="modal">
+			
+			
+			<div class="disp">
+				<button onclick="lb()" id="butn">Change background color</button><br>
+				<center>
+				<div type="button" onclick="ii()" class="close" id="f">
+				<span></span>
+				<span></span>
+				</div></center><br>	
+				<button onclick="er()" id="a"></button>
+				<button onclick="ff()" id="b"></button>
+				<button onclick="gg()" id="c"></button><br>
+				<button onclick="ee()" id="d">Insert Image</button>
+			</div>
+		</div>
+	
+	<script>
+		function lb(){
+			document.getElementById("js").style.backgroundColor="";
+		}
+		function er(){
+			document.getElementById("js").style.backgroundColor="red";
+		}	
+		function ff(){
+			document.getElementById("js").style.backgroundColor="cyan";
+		}
+		function gg(){
+			document.getElementById("js").style.backgroundColor="#ef256a";
+		}
+		function lb(){
+			document.getElementById("a").style.display="block";
+			document.getElementById("b").style.display="block";
+			document.getElementById("c").style.display="block";	
+			document.getElementById("d").style.display="block";	
+		}
+		function ee(){
+			document.getElementById("js").style.backgroundImage="url('aa.jpg')";
+		}
+		var modal=document.getElementById("modal");
+		function rr(){
+			document.getElementById("modal").style.display="block";
+		}
+		function ii(){
+			modal.style.display="none";
+		}
+		window.onclick= function (event){
+			if(event.target==modal){
+				modal.style.display="none";
+			}
+		}
+		var name ="THIS WEBSITE IS ONLY FOR EDUCATION";
+		window.alert("HELLO "+ name);
+		
+		
+		
+	</script>
+</body>
+
+
+</html>
+
+
