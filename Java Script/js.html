@@ -137,7 +137,7 @@
 		#e{
 			position:relative;
 			top:30px;
-			left:1px;
+			left:-220px;
 			height:40px;
 			width:300px;
 			border-radius:20px;
@@ -191,10 +191,88 @@
 		.close:hover{
 			background-color:red;
 		}
-		
-		
+		.navbar{
+			height:60px;
+			width:100%;
+			border-bottom:2px solid cyan ;
+			background: linear-gradient(to top, black, #ff00e5);
+			font-family:algerian;
+		}
+		.nav-logo a {
+			text-decoration:none;
+			color:#fff;
+			transition:0.7s ease-out;
+		}
+		.nav-logo {
+			padding-top:10px;
+			margin-left:30px;
+			float:left;
+		}
+		.nav-logo a:hover{
+			color:cyan;
+		}
+		.footer{
+			margin-top:50px;
+			background: linear-gradient(to top, #ff00e5, black);
+			height:80px;
+			width:100%;
+			font-family:algerian;
+			font-size:30px;
+			color:black;
+			transition:2s ease-out;
+		}
+		.footer:hover{
+			color:red;
+		}
+		.footer sup{
+			position:relative;
+			top:30;
+			float:left;
+			margin-left:10px;
+		}
+		.border{
+			height:25px;
+			width:400px;
+			border-radius:5px;
+			border:2px solid cyan;
+			position:relative;
+			left:350px;
+			top:5px;
+			color:#fff;
+			font-size:20px;
+		}
+		.logo-name{
+			position:relative;
+			top:-29px;
+			left:-35px;
+		}
+		.col{
+			border:2px solid black;
+			border-radius:5px;
+			height:300px;
+			width:600px;
+			position:relative;
+			top:200px;
+			left:50px;
+		}
+		.col-2{
+			border:2px solid black;
+			border-radius:5px;
+			height:300px;
+			width:600px;
+			position:relative;
+			margin-left:700px;
+			top:-103px;
+		}
 		</style>
+		
 	</head>
+	<div class="navbar">
+		<div class="nav-logo">
+		<marquee class="border">Hello Guys:) My Name is Ashish I am 14 year old This is my Website And I am a Web desiner Thanks for Watching and Visit Again!(:</marquee>
+			<a href="index.html"><h1 class="logo-name">ASHISH KUMAR</h1></a>
+		</div>
+		</div>
 	<body id="js" style="background color:red;">
 	<button onclick="rr()" id="e">Open Modal</button>
 		<div type="button" id="modal" class="modal">
@@ -213,7 +291,16 @@
 				<button onclick="ee()" id="d">Insert Image</button>
 			</div>
 		</div>
-	
+		<div class="col">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lfaahdnXAws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="col-2">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/2zQuvi3w7hQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		
+	<div class="footer">
+		<sup>copyright@Ashish Kumar</sup>
+	</div>
 	<script>
 		function lb(){
 			document.getElementById("js").style.backgroundColor="";
@@ -258,5 +345,4 @@
 
 
 </html>
-
 
